@@ -1,0 +1,26 @@
+{
+	"name": "toddhossack/silverstripe-calendar-contacts",
+	"description": "Adds event contacts to the calendar module",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/ToddHossack/silverstripe-calendar-contacts",
+	"keywords": ["silverstripe","location"],
+	"authors": [
+		{
+			"name": "Todd Hossack",
+			"email": "todd@tiraki.com",
+			"role": "Developer"
+		}
+	],
+	"license": "BSD-3-Clause",
+	"require": {
+		"php": ">=5.4.0",
+		"silverstripe/cms": "~3.1",
+		"silverstripe/framework": "~3.1",
+		"sheadawson/quickaddnew": "~1.1",
+		"toddhossack/silverstripe-directory": "dev-master"
+	},
+	"extra": {
+        "installer-name": "calendar-contacts"
+    },
+	"minimum-stability": "dev"
+}

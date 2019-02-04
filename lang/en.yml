@@ -1,0 +1,7 @@
+en:
+  CalendarContactsEventExtension:
+    ContactsTab: 'Contacts'
+    ContactsField: 'Contacts'
+  CalendarDirectoryEntryExtension:
+    EventsTab: 'Events'
+    EventsField: 'Events'

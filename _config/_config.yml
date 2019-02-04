@@ -1,0 +1,16 @@
+---
+Name: calendar-contacts
+After:
+  - 'framework/*'
+  - 'cms/*'
+  - 'calendar/*'
+---
+
+# Extensions
+Event:
+  extensions:
+    - CalendarContactsEventExtension
+
+CMDirectoryEntry:
+  extensions:
+    - CalendarDirectoryEntryExtension
