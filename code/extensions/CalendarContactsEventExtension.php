@@ -13,16 +13,16 @@ class CalendarContactsEventExtension extends DataExtension {
 		$fields->findOrMakeTab(
 			'Root.Contacts', _t('CalendarContactsEventExtension.ContactsTab','Contacts')
 		);
-        /*
-        $source = function() {
-            return EventContact::get()->map()->toArray();
-        };
+
+        $options = CMDirectoryEntry::get()->map('ID','FullName')->toArray();
+        asort($options);
         
-        $contactsField = DropdownField::create('ConID', _t('CalendarContactsEventExtension.LocationField', 'Select location'), $source())
-            ->setHasEmptyDefault(true)
-            ->useAddNew('EventLocation',$source);
-		$fields->addFieldToTab('Root.Location',$locationField);
-        */
+        $contactsFields = ListboxField::create('Contacts',
+            _t('CalendarContactsEventExtension.Contacts','Contacts'),
+            $options, '', 5, true
+        );
+        
+        $fields->addFieldToTab('Root.Contacts',$contactsFields);
     }
 
 }

@@ -4,6 +4,7 @@ After:
   - 'framework/*'
   - 'cms/*'
   - 'calendar/*'
+  - 'directory/*'
 ---
 
 # Extensions
@@ -14,3 +15,7 @@ Event:
 CMDirectoryEntry:
   extensions:
     - CalendarDirectoryEntryExtension
+
+CMDirectory:
+  extensions:
+    - CalendarDirectoryExtension
