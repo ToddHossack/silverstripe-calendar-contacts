@@ -24,5 +24,13 @@ class CalendarContactsEventExtension extends DataExtension {
         
         $fields->addFieldToTab('Root.Contacts',$contactsFields);
     }
+    
+    
+    
+    public function onBeforeDelete() 
+    {
+        //$this->owner->Contacts()->removeAll();
+	}
+
 
 }

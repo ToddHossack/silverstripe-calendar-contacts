@@ -7,4 +7,11 @@ class CalendarDirectoryEntryExtension extends DataExtension {
 		'Events' => 'Event'
 	);
     
+    
+    public function updateCMSFields(FieldList $fields)
+    {
+        // Remove events gridfield
+        $fields->removeByName('Events');
+    }
+    
 }
