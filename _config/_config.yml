@@ -12,7 +12,7 @@ Event:
   extensions:
     - CalendarContactsEventExtension
 
-CMDirectoryEntry:
+CMDirectoryPersonEntry:
   extensions:
     - CalendarDirectoryEntryExtension
 
